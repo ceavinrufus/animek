@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -12,27 +13,15 @@ function Footer() {
         className="object-contain"
       />
       <div className="flex items-center gap-6">
-        <Image
-          src="./tiktok.svg"
-          alt="logo"
-          width={19}
-          height={19}
-          className="object-contain"
-        />
-        <Image
-          src="./instagram.svg"
-          alt="logo"
-          width={19}
-          height={19}
-          className="object-contain"
-        />
-        <Image
-          src="./twitter.svg"
-          alt="logo"
-          width={19}
-          height={19}
-          className="object-contain"
-        />
+        <Link target="_blank" href={"https://www.github.com/ceavinrufus"}>
+          <Image
+            src="./github.svg"
+            alt="logo"
+            width={19}
+            height={19}
+            className="object-contain"
+          />
+        </Link>
       </div>
     </footer>
   );
